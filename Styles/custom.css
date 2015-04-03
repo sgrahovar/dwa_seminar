@@ -1,0 +1,144 @@
+/* General
+-------------------------------------------------- */
+* { margin: 0; padding: 0; }
+html, body { margin: 0; padding: 0; height: 100%; font-family: 'Open Sans', sans-serif; font-size: 13px; background-color: #2D4671; }
+*, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+
+/* Layout
+-------------------------------------------------- */
+
+#dwa-wrapper
+{
+  min-height: 100%;
+  height: auto;  
+}
+
+#dwa-wrapper .container
+{ 
+  margin: 0 auto;
+  max-width: 960px;
+  width: auto;
+  height: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* Navbar
+-------------------------------------------------- */
+
+#bs-example-navbar-collapse-1
+{
+
+}
+
+#bs-example-navbar-collapse-1 ul li.active a
+{
+  color: #001333;
+  background-color: #647490;
+}
+
+#bs-example-navbar-collapse-1 ul li a
+{ 
+  color: #b1b1b1;
+}
+
+#bs-example-navbar-collapse-1 ul li a:hover
+{ 
+  color: white;
+}
+
+#bs-example-navbar-collapse-1 .dropdown-menu
+{
+  background-color: #001333;
+}
+
+#bs-example-navbar-collapse-1 .dropdown-menu li a:hover
+{
+  background-color: #001333;
+  color: white;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  background-color: #001333;
+  color: white;
+}
+
+
+/* Carousel
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 250px;
+  margin-bottom: 20px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  background-color: rgba(8, 35, 82, 0.7) !important;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 250px;
+  background-color: #082352 !important;
+}
+
+/*
+background-color: rgba(8, 35, 82, 0.5)
+*/
+
+.carousel.carousel-inner.active
+{
+  background-color: #082352 !important;
+}
+
+.carousel-control.left, .carousel-control.right
+{
+  background-color: #082352;
+}
+
+.carousel-inner > .item > img {
+      width: 70%;
+      margin: auto;
+}
+
+/* Content
+-------------------------------------------------- */
+
+#dwa-wrapper .contentArea
+{ 
+  max-width: 960px;
+  width: auto;
+  background-color: #082352;
+  color: white;
+  margin: 0px;
+}
+
+/* Content - home
+-------------------------------------------------- */
+
+#dwa-wrapper .contentArea .homeDiv
+{ 
+  
+}
+
+/* Content - jela
+-------------------------------------------------- */
+
+#dwa-wrapper .contentArea .jelaDiv
+{ 
+  max-height: 200px;
+  padding: 15px 0 15px 15px;
+  margin: 5px 0 5px 0;
+}
+
+#dwa-wrapper .contentArea .picaDiv
+{ 
+  max-height: 200px;
+  padding: 15px 0 15px 15px;
+  margin: 5px 0 5px 0;
+}
