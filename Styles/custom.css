@@ -1,121 +1,134 @@
 /* General
 -------------------------------------------------- */
 * { margin: 0; padding: 0; }
-html, body { margin: 0; padding: 0; height: 100%; font-family: 'Open Sans', sans-serif; font-size: 13px; background-color: #2D4671; }
+html, body { position: relative; margin: 0; padding: 0; height: 100%; font-family: 'Open Sans', sans-serif; font-size: 13px; background-color: #5D1F1F; }
 *, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+p
+{
+     font-family: 'Shadows Into Light Two', cursive; font-size: 15px; margin-bottom: 25px;
+}
 
-
+h2, h3
+{
+     font-family: 'Amaranth', sans-serif;
+}
 /* Layout
 -------------------------------------------------- */
 
 #dwa-wrapper
 {
-  min-height: 100%;
-  height: auto;  
+     min-height: 100%;
+     height: auto;  
 }
 
 #dwa-wrapper .container
 { 
-  margin: 0 auto;
-  max-width: 960px;
-  width: auto;
-  height: auto;
-  padding-left: 0px;
-  padding-right: 0px;
+     margin: 0 auto;
+     max-width: 960px;
+     width: auto;
+     padding: 0;
 }
 
 /* Navbar
 -------------------------------------------------- */
 
-#bs-example-navbar-collapse-1
+.customNavbar
+{
+     background-color: #170E01; 
+     border: none; 
+     margin-bottom: 5px;
+}
+
+#navbarCollapse
 {
 
 }
 
-#bs-example-navbar-collapse-1 ul li.active a
+#navbarCollapse ul li.active a
 {
-  color: #001333;
-  background-color: #647490;
+     color: #001333;
+     background-color: #170E01;
 }
 
-#bs-example-navbar-collapse-1 ul li a
+#navbarCollapse ul li a
 { 
-  color: #b1b1b1;
+     color: #D4A66F;
 }
 
-#bs-example-navbar-collapse-1 ul li a:hover
+#navbarCollapse ul li a:hover
 { 
-  color: white;
+     color: white;
 }
 
-#bs-example-navbar-collapse-1 .dropdown-menu
+#navbarCollapse .dropdown-menu
 {
-  background-color: #001333;
+     background-color: #170E01;
+     margin-top: -1px;
+     margin-right: -2px;
 }
 
-#bs-example-navbar-collapse-1 .dropdown-menu li a:hover
+#navbarCollapse .dropdown-menu li a:hover
 {
-  background-color: #001333;
-  color: white;
+     background-color: #AD803D;
+     color: white;
 }
 
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #001333;
-  color: white;
+     background-color: #AD803D;
+     color: white;
 }
 
 
 /* Carousel
 -------------------------------------------------- */
 
-/* Carousel base class */
 .carousel {
-  height: 250px;
-  margin-bottom: 20px;
+     height: 250px;
+     margin-bottom: 5px;
 }
-/* Since positioning the image, we need to help out the caption */
+
 .carousel-caption {
-  z-index: 10;
-  background-color: rgba(8, 35, 82, 0.7) !important;
+     z-index: 10;
+     background-color: rgba(155, 111, 45, 0.5) !important;
+     margin-top: 50px;
 }
 
-/* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 250px;
-  background-color: #082352 !important;
+     height: 250px;
+     background-color: #96652B !important;
 }
-
-/*
-background-color: rgba(8, 35, 82, 0.5)
-*/
 
 .carousel.carousel-inner.active
 {
-  background-color: #082352 !important;
+     background-color: #96652B !important;
 }
 
 .carousel-control.left, .carousel-control.right
 {
-  background-color: #082352;
+     background-color: #96652B;
 }
 
-.carousel-inner > .item > img {
-      width: 70%;
-      margin: auto;
+.carousel-inner > .item > img 
+{
+     width: 70%;
+     margin: auto;
 }
+
 
 /* Content
 -------------------------------------------------- */
 
 #dwa-wrapper .contentArea
-{ 
-  max-width: 960px;
-  width: auto;
-  background-color: #082352;
-  color: white;
-  margin: 0px;
+{    
+     position: relative;
+     max-width: 960px;
+     /*
+     background-color: #96652B;
+     */
+     color: white;
+     margin: 0px;
 }
 
 /* Content - home
@@ -126,19 +139,85 @@ background-color: rgba(8, 35, 82, 0.5)
   
 }
 
-/* Content - jela
+/* Content - jela i pica
 -------------------------------------------------- */
 
-#dwa-wrapper .contentArea .jelaDiv
+#dwa-wrapper .contentArea .jelaPica
 { 
-  max-height: 200px;
-  padding: 15px 0 15px 15px;
-  margin: 5px 0 5px 0;
+     max-height: 170px;
+     padding: 15px;
 }
 
-#dwa-wrapper .contentArea .picaDiv
+#dwa-wrapper .contentArea .colorOne,
+#dwa-wrapper .contentArea .colorFour
 { 
-  max-height: 200px;
-  padding: 15px 0 15px 15px;
-  margin: 5px 0 5px 0;
+     background-color: #6F4B20;
+}
+
+#dwa-wrapper .contentArea .colorTwo,
+#dwa-wrapper .contentArea .colorThree
+{ 
+     background-color: #886A3E;
+}
+
+#dwa-wrapper .contentArea .jelaPica img
+{ 
+     max-width: 100%;
+     max-height: 140px;
+}
+
+#dwa-wrapper .contentArea .jelaPica
+{ 
+     height: 200px;
+     padding: 15px;
+}
+
+#dwa-wrapper .contentArea .readBackground
+{
+
+}
+
+#dwa-wrapper .contentArea a.link
+{ 
+     display: block;
+     color: white;
+     text-decoration: none;
+}
+
+/* Media queries - <768px
+-------------------------------------------------- */
+
+@media (max-width: 768px) { 
+     #dwa-wrapper .contentArea .colorThree
+     {
+          background-color: #6F4B20;
+     }
+     #dwa-wrapper .contentArea .colorFour
+     {
+          background-color: #886A3E;
+     }
+     #dwa-wrapper .contentArea .jelaPica
+     { 
+          height: auto;
+          padding: 15px;
+     }
+     #dwa-wrapper .contentArea .picaDiv
+     { 
+          height: auto;
+          padding: 15px;
+     }
+
+     .carousel-inner > .item > img {
+          width: 100%;
+          margin: auto;
+     }
+}
+
+/* Media queries - >768px
+-------------------------------------------------- */
+@media (min-width: 768px) { 
+     #dwa-wrapper .contentArea .jelaPica:hover
+     {    
+          background-color: rgba(255, 232, 0, 0.50);  
+     }
 }
