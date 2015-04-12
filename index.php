@@ -1,7 +1,7 @@
 ﻿<?php
 //Spajanje na mysql bazu.
 
-$con = mysqli_connect('127.0.0.1', 'root', 'sanjin11', 'restoran');
+$con = mysqli_connect('127.0.0.1', 'root', 'root', 'restoran');
 if (mysqli_connect_errno())
 {
 echo "Failed to connect to MySQL: " . mysqli_connect_error();
